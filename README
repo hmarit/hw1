@@ -1,0 +1,9 @@
+'hw1'
+This program finds the possible anagrams of the "ihazwordz" game
+and lists the best words to maximize points possible.
+
+createDictionary.cpp:
+Creates a alphabetically reordered dictionary in a new text file.
+Run this before main.cpp.
+
+main.cpp:

@@ -7,20 +7,12 @@ using namespace std;
 
 int main()
 {
-  string word;
+  string word, fileName;
   set<string> dictionary;
 
-  fstream file ("reorderedDictionary.txt"); // reorderedDictionary.txt
-  if (!file.is_open())
-    cout << "File cannot be opened!" << endl;
-  else
-  {
-    while (!file.eof())
-    {
-      file >> word;
-      dictionary.insert(word);
-    }
-  }
+  fileName = "reorderedDictionary.txt";
+
+  createHashTable(fileName);
 
   // Check
   for (set<string>::iterator it = dictionary.begin(); it != dictionary.end(); it++)
